@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/OpenSans-Bold.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans Regular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans Semibold';
+	src: url('../fonts/OpenSans-Semibold.ttf');
+	font-display: swap;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+
+body {
+	font-family: 'Open Sans Regular', sans-serif;
+	color: rgba(33, 33, 33, 255);
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* img {
+	max-width: 100%;
+	height: auto;
+} */
+
+ul {
+	list-style: none;
+}
+
+/* header 
+*/
+.menu-bar {
+	background: #fff;
+	padding: 30px 0 0 0;
+}
+
+.logo {
+	width: 45px;
+	height: 45px;
+}
+
+.menu__item {
+	margin-left: 37px;
+}
+
+.menu__link {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
+
+	color: #212121;
+}
+
+.menu__item:first-child {
+	margin-left: 0;
+}
