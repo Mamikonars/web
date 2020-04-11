@@ -679,7 +679,19 @@ section {
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
+	transition: border-radius .3s;
+	-webkit-transition: border-radius .3s;
+	-moz-transition: border-radius .3s;
+	-ms-transition: border-radius .3s;
+	-o-transition: border-radius .3s;
 }
+
+.team__item-img img:hover {
+	border-top-right-radius: 85px;
+	border-bottom-left-radius: 85px;
+}
+
+
 
 /* blog 
 */
