@@ -163,13 +163,13 @@ ul {
 }
 
 .close_btn {
-	width: 35px;
-	height: 30px;
-	display: none;
-	position: absolute;
-	cursor: pointer;
-	right: 0;
-	top: 34%;
+    width: 35px;
+    height: 30px;
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
 }
 
 .close_item {
