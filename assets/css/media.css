@@ -1,0 +1,303 @@
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+
+	.menu {
+		display: none;
+	}
+
+	.mobile {
+		display: flex !important;
+	}
+
+	.menu__item {
+		margin-left: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.is-active.close_btn {
+		display: block;
+		z-index: 100;
+	}
+
+	.mobile .menu__link {
+		font-size: 24px;
+		line-height: 52px;
+	}
+
+	.intro__title {
+		font-size: 50px;
+		line-height: 10px;
+	}
+
+	.menu-bar__logo {
+		height: 60px;
+		display: flex;
+		align-items: center;
+	}
+
+	section {
+		padding: 50px 0;
+	}
+
+	.filter__btn {
+		margin-bottom: 2%;
+	}
+
+	.contact__title,
+	.contact__subtitle {
+		font-size: 18px;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		background-color: #ffffff;
+		width: 48%;
+		padding: 7px 20px;
+		font-size: 18px;
+	}
+
+	#textarea {
+		width: 100%;
+		min-height: 200px;
+	}
+
+	.send-btn {
+		padding: 11px 49px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.intro__title {
+		font-size: 45px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+
+	.intro__subtitle {
+
+		line-height: 1.5;
+		margin-bottom: 40px;
+	}
+
+	.btn {
+		padding: 11px 15px;
+		font-size: 17px;
+		border: 2px solid #f8f8f8;
+	}
+
+	.about__subtitle {
+		padding-bottom: 0;
+	}
+
+	.card-btn {
+		margin-top: 0;
+	}
+
+	.portfolio__card {
+		position: relative;
+		transition: all .3s;
+		width: 85%;
+		margin: 5% auto;
+	}
+
+	.portfolio__image {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.price__card {
+		margin: 0 auto 4%;
+		width: 72%;
+	}
+
+	.section__subtitle {
+		margin-bottom: 50px;
+	}
+
+	.team__social {
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 30px auto 70px;
+	}
+
+	.blog__info {
+		margin: 0 0% 10%;
+	}
+
+	.blog__img {
+		margin-bottom: 5%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		background-color: #ffffff;
+		width: 48%;
+		padding: 6px 10px;
+		border-radius: 10.0px;
+		font-size: 16px;
+	}
+
+	.contact__info-item {
+		width: 50%;
+		margin-bottom: 5%;
+	}
+
+	.send-btn {
+		padding: 8px 38px;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	.intro__title {
+		line-height: 1.5;
+		font-size: 35px;
+	}
+
+	.intro__subtitle {
+		line-height: 1.5;
+		font-size: 19px;
+	}
+
+	.filter__btn {
+		padding: 7px 8px;
+		font-size: 14px;
+		line-height: 19px;
+	}
+
+	.section__subtitle {
+		width: 95%;
+	}
+
+	.price__card {
+		width: 69%;
+	}
+
+	.team__social {
+		width: 60%;
+	}
+
+	.form__header {
+		flex-wrap: wrap;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		width: 100%;
+		margin-bottom: 3%;
+	}
+
+	#textarea {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 455px) {
+	.contact__info-item {
+		width: 100%;
+	}
+
+	.contact__description {
+		margin-top: 3%;
+	}
+
+	input[type="text"],
+	input[type="email"] {
+		padding: 4px 10px;
+	}
+
+	.price__card {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.intro__title {
+		line-height: 1.5;
+		font-size: 26px;
+	}
+
+	.intro__subtitle {
+		line-height: 1.5;
+		font-size: 17px;
+	}
+
+	.btn {
+		padding: 8px 10px;
+		font-size: 15px;
+	}
+
+	.card-btn {
+		padding: 8px 6px;
+		background: transparent;
+		margin-top: 8%;
+		width: 73%;
+	}
+
+	.filter__btn {
+		margin-bottom: 4%;
+	}
+
+	.filter__btn {
+		padding: 6px 8px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.price__card {
+		width: 93%;
+	}
+
+	.services__card {
+		background-color: #fff;
+		margin-bottom: 10%;
+		padding: 25px 20px;
+	}
+
+	.price__card-title {
+		font-size: 23px;
+		line-height: 17px;
+		margin: 25px 0 45px;
+	}
+
+	.price__card-pricing {
+		font-size: 32px;
+	}
+
+	.price__card-list-item {
+		font-size: 16px;
+		line-height: 21px;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		color: #212121;
+		padding-bottom: 20px;
+		margin: 0 auto 17px;
+		width: 70%;
+		border-bottom: 1.0px solid #00000052;
+	}
+
+	.price__card-header sup {
+		font-size: 20px;
+	}
+
+	.price__card-btn {
+		text-transform: uppercase;
+		border: 1px solid #212121;
+		padding: 8px 5px;
+		margin-bottom: 25px;
+		font-size: 15px;
+	}
+
+	.team__social {
+		width: 80%;
+	}
+
+	.team__item-img img {
+		width: 100%;
+	}
+}

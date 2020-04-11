@@ -4,42 +4,614 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="./assets/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<title>Web</title>
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/normalize.css">
-
+	<link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
 <body>
-	<header class="menu-bar">
+	<header class="menu-bar" id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2">
-					<img class="logo" src="./assets/img/logo.png" alt="logo">
+				<div class="col-xl-2 col-lg-1">
+					<div class="menu-bar__logo">
+						<a href="#"><img class="logo" src="./assets/img/logo.png" alt="logo"></a>
+					</div>
 				</div>
-				<div class="col-xl-8 ml-auto align-self-center">
-					<nav>
-						<ul class="menu d-flex justify-content-end">
-							<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">About</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Servicing</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Portfolio</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Contact us</a></li>
-							<li class="menu__item"><img class="menu__search-icon" src="./assets/img/search.png"
-									alt="search"></a></li>
+				<div class="col-xl-8 col-lg-10 ml-auto align-self-center">
+					<nav class="main-menu">
+						<ul class="menu d-none d-lg-flex justify-content-end">
+							<li class="menu__item">
+								<a class="menu__link" href="#header">Home</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#about">About</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#servicing">Servicing</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#portfolio">Portfolio</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#blog">Blog</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#contact">Contact us</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">
+									<img class="menu__search-icon" src="./assets/img/search.png" alt="search">
+								</a>
+							</li>
 						</ul>
+						<div class="burger">
+							<span class="burger_item"></span>
+							<span class="burger_item"></span>
+							<span class="burger_item"></span>
+						</div>
+						<div class="close_btn">
+							<span class="close_item"></span>
+							<span class="close_item"></span>
+						</div>
 					</nav>
 				</div>
+
 			</div>
 		</div>
 	</header>
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex flex-column justify-content-center align-content-center">
+					<h1 class="intro__title">Web development project</h1>
+					<h2 class="intro__subtitle">Very suitable to support all web development projects</h2>
+					<div class="intro__buttons">
+						<button class="btn">OUR SERVICES</button>
+						<button class="btn is-active">HIRE IS NOW</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">About Us</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-lg-3 col-sm-6">
+					<div class="about__img">
+						<img src="./assets/img/globe.png" alt="globe">
+					</div>
+					<h3 class="about__title">Awesome Icons</h3>
+					<span class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod
+						tempor</span>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="about__img">
+						<img src="./assets/img/connect.png" alt="connect">
+					</div>
+					<h3 class="about__title">One Page</h3>
+					<span class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor</span>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="about__img">
+						<img src="./assets/img/mind.png" alt="mind">
+					</div>
+					<h3 class="about__title">Fully Responsive</h3>
+					<span class="about__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+						doeiusmod tempor
+					</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services" id="servicing">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Servicing</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/phone-black.png" alt="mind">
+						</div>
+						<h3 class="about__title">Research</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/portfolio.png" alt="mind">
+						</div>
+						<h3 class="about__title">Portfolio</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/support.png" alt="mind">
+						</div>
+						<h3 class="about__title">Support</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/design.png" alt="mind">
+						</div>
+						<h3 class="about__title">Design</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/documentation.png" alt="mind">
+						</div>
+						<h3 class="about__title">Documentation</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="services__card">
+						<div class="about__img">
+							<img src="./assets/img/dev.png" alt="mind">
+						</div>
+						<h3 class="about__title">Development</h3>
+						<span class="about__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+							blanditiis praesentium voluptatum iti atque corrupti
+							quos.</span>
+						<button class="card-btn">READ MORE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Latest Works</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="filter__tabs">
+						<button class="filter__btn is-active" data-filter="all">All</button>
+						<button class="filter__btn" data-filter="design">WEB DESIGN</button>
+						<button class="filter__btn" data-filter="ux">UI/UX DESIGN</button>
+						<button class="filter__btn" data-filter="mockup">MOCKUPS</button>
+					</div>
+				</div>
+			</div>
+			<div class="row portfolio-container">
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="ux">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_1.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="design">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_2.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="design">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_3.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="mockup">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_4.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="mockup">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_5.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 portfolio__item" data-category="design">
+					<div class="portfolio__card">
+						<img class="portfolio__image" src="./assets/img/works/work_6.jpg" alt="portfolio">
+						<div class="portfolio__info">
+							<h4 class="portfolio__title"><a class="portfolio__link" href="#">Lorem ipsum dolor</a></h4>
+							<h5 class="portfolio__subtitle">labore et</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="price">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Pricing Plan</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6">
+					<div class="price__card">
+						<div class="price__card-header">
+							<h3 class="price__card-title">Free Trail</h3>
+							<div class="price__card-info">
+								<sup>$</sup>
+								<span class="price__card-pricing">00</span>
+								<sub>per month</sub>
+							</div>
+						</div>
+						<div class="price__card-body">
+							<ul class="price__card-list">
+								<li class="price__card-list-item">30 Free Trail</li>
+								<li class="price__card-list-item">5 Free Projects</li>
+								<li class="price__card-list-item">PHP 5 Enabled</li>
+								<li class="price__card-list-item">24/7 Suports</li>
+							</ul>
+						</div>
+						<div class="price__card-footer">
+							<button class="price__card-btn">Order Now</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="price__card">
+						<div class="price__card-header">
+							<h3 class="price__card-title">Basic</h3>
+							<div class="price__card-info">
+								<sup>$</sup>
+								<span class="price__card-pricing">50</span>
+								<sub>per month</sub>
+							</div>
+						</div>
+						<div class="price__card-body">
+							<ul class="price__card-list">
+								<li class="price__card-list-item">50 Free Trail</li>
+								<li class="price__card-list-item">7 Free Projects</li>
+								<li class="price__card-list-item">PHP 5 Enabled</li>
+								<li class="price__card-list-item">24/7 Suports</li>
+							</ul>
+						</div>
+						<div class="price__card-footer">
+							<button class="price__card-btn">Order Now</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="price__card">
+						<div class="price__card-header">
+							<h3 class="price__card-title">Ultimates</h3>
+							<div class="price__card-info">
+								<sup>$</sup>
+								<span class="price__card-pricing">99</span>
+								<sub>per month</sub>
+							</div>
+						</div>
+						<div class="price__card-body">
+							<ul class="price__card-list">
+								<li class="price__card-list-item">70 Free Trail</li>
+								<li class="price__card-list-item">15 Free Projects</li>
+								<li class="price__card-list-item">PHP 5 Enabled</li>
+								<li class="price__card-list-item">24/7 Suports</li>
+							</ul>
+						</div>
+						<div class="price__card-footer">
+							<button class="price__card-btn">Order Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Our Team Member</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-md-6">
+					<div class="team__item">
+						<div class="team__item-img">
+							<img src="./assets/img/team/team-1.jpg" alt="team">
+						</div>
+						<h4 class="team__item-name">John Doe</h4>
+						<span class="team__item-position">General Manager</span>
+						<div class="team__social">
+							<a href="#"><img src="./assets/img/social/fb.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/tw.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/in.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/vk.svg" class="social-item" alt="social"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="team__item">
+						<div class="team__item-img">
+							<img src="./assets/img/team/team-2.jpg" alt="team">
+						</div>
+						<h4 class="team__item-name">Monika Rose</h4>
+						<span class="team__item-position">Designer</span>
+						<div class="team__social">
+							<a href="#"><img src="./assets/img/social/fb.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/tw.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/in.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/vk.svg" class="social-item" alt="social"></a>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="team__item">
+						<div class="team__item-img">
+							<img src="./assets/img/team/team-3.jpg" alt="team">
+						</div>
+						<h4 class="team__item-name">Mark Nobel</h4>
+						<span class="team__item-position">Developer</span>
+						<div class="team__social">
+							<a href="#"><img src="./assets/img/social/fb.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/tw.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/in.svg" class="social-item" alt="social"></a>
+							<a href="#"><img src="./assets/img/social/vk.svg" class="social-item" alt="social"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Blog</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="blog__img">
+						<img src="./assets/img/blog-1.jpg" alt="blog">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog__info">
+						<h2><a class="blog__info-title" href="#">SEO Quis Vestibulum</a></h2>
+						<div class="blog__info-block">
+							<img class="date-img" src="./assets/img/date.png" alt="date">
+							<span class="blog__info-date">14.0702017</span>
+							<img class="category-img" src="./assets/img/doc.png" alt="category">
+							<span class="blog__info-category">
+								Development</span>
+						</div>
+						<p class="blog__info-description">
+							Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo
+							consequat...
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog__img">
+						<img src="./assets/img/blog-2.jpg" alt="blog">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog__info">
+						<h2><a class="blog__info-title" href="#">SEO Quis Vestibulum</a></h2>
+						<div class="blog__info-block">
+							<img class="date-img" src="./assets/img/date.png" alt="date">
+							<span class="blog__info-date">14.0702017</span>
+							<img class="category-img" src="./assets/img/doc.png" alt="category">
+							<span class="blog__info-category">
+								Development</span>
+						</div>
+						<p class="blog__info-description">
+							Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo
+							consequat...
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog__img">
+						<img src="./assets/img/blog-3.jpg" alt="blog">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="blog__info">
+						<h2><a class="blog__info-title" href="#">SEO Quis Vestibulum</a></h2>
+						<div class="blog__info-block">
+							<img class="date-img" src="./assets/img/date.png" alt="date">
+							<span class="blog__info-date">14.0702017</span>
+							<img class="category-img" src="./assets/img/doc.png" alt="category">
+							<span class="blog__info-category">
+								Development</span>
+						</div>
+						<p class="blog__info-description">
+							Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo
+							consequat...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="section__title">Contact us</h2>
+					<div class="section__subtitle">
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="contact__info">
+				<div class="contact__info-item">
+					<div class="contact__icon">
+						<img src="./assets/img/point.png" alt="contact">
+					</div>
+					<div class="contact__description">
+						<h5 class="contact__title">Nobinagar savar,</h5>
+						<h6 class="contact__subtitle">Dhaka Bangladesh</h6>
+					</div>
+				</div>
+				<div class="contact__info-item">
+					<div class="contact__icon">
+						<img src="./assets/img/tel.png" alt="contact">
+					</div>
+					<div class="contact__description">
+						<h5 class="contact__title">Nobinagar savar,</h5>
+						<h6 class="contact__subtitle">Dhaka Bangladesh</h6>
+
+					</div>
+				</div>
+				<div class="contact__info-item">
+					<div class="contact__icon">
+						<img src="./assets/img/mail.png" alt="contact">
+					</div>
+					<div class="contact__description">
+						<h5 class="contact__title">Nobinagar savar,</h5>
+						<h6 class="contact__subtitle">Dhaka Bangladesh</h6>
+					</div>
+				</div>
+			</div>
+
+			<form class="form" id="form" action="#">
+				<div class="form__header">
+					<input type="text" placeholder="Your Name">
+					<input type="email" placeholder="Your Email">
+				</div>
+				<textarea name="textarea" id="textarea"></textarea>
+				<div class="form__footer">
+					<input class="send-btn" type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</section>
+	<div class="to-top"></div>
+	<footer>
+		<div class="copyright">2020 | Portfolio site by <a class="author" href="https://vk.com/mamikonarsvk/"
+				target="_blank">Mamikon</a></div>
+	</footer>
 
 	<!-- scripts -->
 	<script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
 	<script src="./assets/js/popper.min.js"></script>
 	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
