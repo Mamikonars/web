@@ -163,21 +163,20 @@ ul {
 }
 
 .close_btn {
-	<<<<<<< HEAD width: 35px;
+	width: 35px;
 	height: 30px;
 	display: none;
 	position: fixed;
 	cursor: pointer;
 	right: 5%;
 	top: 5%;
-	=======width: 35px;
+	width: 35px;
 	height: 30px;
 	display: none;
 	position: fixed;
 	cursor: pointer;
 	right: 5%;
 	top: 5%;
-	>>>>>>>v 2.1
 }
 
 .close_item {
@@ -871,7 +870,7 @@ input[type="email"] {
 	border-radius: 10.0px;
 	padding: 20px 55px;
 	margin: 2% 0;
-	border: none1;
+	border: none;
 	transition: opacity .3s;
 	-webkit-transition: opacity .3s;
 	-moz-transition: opacity .3s;
