@@ -394,7 +394,7 @@ section {
 	background: #005d54;
 }
 
-.card-btn:hover .card-btn img{
+.services__card:hover img{
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(3deg) brightness(101%) contrast(103%);
 }
 
